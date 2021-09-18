@@ -1,0 +1,228 @@
+@charset "utf-8"; html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote { padding: 0; margin: 0; font-size: 100%; font-weight: normal; }
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; } ol
+{ padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; } q:before, q:after { content:''; }
+
+body{
+    background-image: url(..//img/bg.jpg);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    background-attachment: fixed;
+    background-color: #0A3937;
+}
+
+.titulo-logo{    
+    width: 100%;   
+}
+
+.logo{
+    background-image: url(..//img/logo-sl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 135px;
+    background-position: center;
+    margin-top: 70px;
+}
+
+
+.cont_nav{
+    margin-top: 40px; 
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+} 
+
+.cont_nav li{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.cont_nav li a{
+    color: #fff;
+}
+
+.cont_nav li a:hover{
+    color: #FDE901;
+}
+.cont_nav li:hover{
+    border-bottom: 2px #FDE901 solid;
+}
+
+
+
+
+legend, h1{
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin: 60px 0 40px 0;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 24px;
+    
+}
+h3{
+    font-weight: 500;
+    font-size: 18px;
+    color: #FDE901;
+}
+
+p{
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+    color: #FDE901;
+    width: 100%;    
+}
+
+a:hover { color: rgb(255, 255, 255); }
+button > a:hover { color: #0A3937;
+ }  
+
+
+button:hover { background-color: #FDE901;
+ }  
+
+
+main{
+display: flex;
+flex-wrap: wrap;
+padding: 30px 0 0 0;
+justify-content: center;
+}
+
+button{
+    cursor: pointer;
+    padding: 15px 40px 15px 40px;
+    border: #FDE90198;
+    background-color: #fde801e0;
+    color: #0A3937;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow:  5px 5px 23px #0f5955,
+             -5px -5px 23px #0A3937;
+}
+.botonpie{
+    margin: 30px 0 30px 0;
+}
+.botonpie:hover {
+    margin: 28px 0 32px 0;
+}
+
+.boton{
+    margin: -5px 0 0px 0;   
+}
+.boton:hover{
+    margin: -7px 0 2px 0;   
+}
+
+.sec{
+    height: auto;
+    margin: 30px 30px ;
+    border: 1px #FDE901 solid;
+    padding: 40px;
+    width: 20%;
+    max-width: 338px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0a39377e;
+    backdrop-filter: blur(1px);
+    
+}
+.secb{
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.secb1{
+    background-image: url(..//img/usuarios.png);
+    width: 30%;
+}
+
+.secb2{
+    height: auto;
+    width: 70%;
+}
+.secb3{
+    background-image: url(..//img/clientes.png);
+    width: 35%;
+}
+
+.secb4{
+    height: auto;
+    width: 65%;
+}
+
+.secb5{
+    background-image: url(..//img/proveedores.png);
+    width: 35%;
+}
+
+footer{
+    bottom: 0px;
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #020e0d7e;
+    backdrop-filter: blur(1px);
+    box-shadow:  5px 5px 23px #02150a72,
+             -5px -5px 23px #02150a72;
+}
+
+.secpie1{
+    border-right: #FDE901 solid 1px;
+    border-left: #FDE901 solid 1px;
+}
+.secpie{
+    height: auto;
+    padding: 40px;
+    width: 20%;
+    color: #fff;
+    max-width: 338px;
+    min-width: 338px;   
+}
+
+.centro, .centro img {
+    text-align: center;
+    margin: 0px 0 40px 0;
+
+}
+
+
+.textopie, .textopie > p, .textopie > li{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+#s1{
+    /*background-color: #0a39377e;
+    background: linear-gradient(145deg, #0A5959AD, #0a39377e);*/
+/*box-shadow:  5px 5px 23px #0f5955,
+             -5px -5px 23px #0A3937;*/
+		backdrop-filter: blur(1px);
+}
+img{
+    margin-top: 20px;
+}
+
