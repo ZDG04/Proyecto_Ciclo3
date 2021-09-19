@@ -1,11 +1,14 @@
+<%@page import="controlador.Conexion"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" contetnt="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link¬† rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
     <title>Usuarios - Tienda Grupo 4</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/formularios.css">
@@ -13,6 +16,22 @@
 </head>
 
 <body>
+<%
+//Conexion con=new Conexion();
+//con.conexionbd();
+
+String ce="",n="",cr="",u="",p="";
+
+if(request.getParameter("do")!=null){
+ce=request.getParameter("do");
+n=request.getParameter("nomb");
+cr=request.getParameter("crr");
+u=request.getParameter("usua");
+p=request.getParameter("pas");
+}
+
+%>
+
     <header class="cont_header" id="cont">
         <div class="titulo-logo">
             <div class="logo" id="logo"></div>
@@ -38,16 +57,16 @@
 
     <section class="secb2">
         <fieldset class="formulariou">
-            <form action="" method="">
-                <input type="text" name="ced" placeholder="C√©dula">
-                <input type="text" name="nom" placeholder="Nombre Completo">
-                <input type="text" name="cor" placeholder="Correo Electr√≥nico">
-                <input type="text" name="usu" placeholder="Usuario">
-                <input type="password" name="pass" placeholder="Contrase√±a">
-                <input type="submit" name="btn" value="CONSULTAR">
-                <input type="submit" name="btn" value="CREAR">
-                <input type="submit" name="btn" value="ACTUALIZAR">
-                <input type="submit" name="btn" value="BORRAR">
+            <form action="ServletUsuario" method="post">
+                <input type="text" name="ced" placeholder="CÈdula"             value="<%=ce%>">
+                <input type="text" name="nom" placeholder="Nombre Completo"    value="<%=n%>">
+                <input type="text" name="cor" placeholder="Correo ElectrÛnico" value="<%=cr%>">
+                <input type="text" name="usu" placeholder="Usuario"            value="<%=u%>">
+                <input type="password" name="pass" placeholder="ContraseÒa"    value="<%=p%>">
+                <input type="submit" name="btncon" value="CONSULTAR">
+                <input type="submit" name="btncre" value="CREAR">
+                <input type="submit" name="btnact" value="ACTUALIZAR">
+                <input type="submit" name="btnbor" value="BORRAR">
             </form>
         </fieldset>
       
@@ -60,11 +79,11 @@
     <section class="secpie">
         <span class="textopie">
             <p>
-                Este es un Software para gestionar transacciones comerciales de una tienda gen√©rica,
+                Este es un Software para gestionar transacciones comerciales de una tienda genÈrica,
                 desarrollado para el ministerio TIC y la Universidad el Bosque como proyecto del ciclo 3 tomando la
-                l√≠nea gr√°fica de <a href="https://uasqua.com/" target="_blank">uasua.com</a></p>
+                lÌnea gr·fica de <a href="https://uasqua.com/" target="_blank">uasqua.com</a></p>
         </span>
-        <button name="" type="button" class="botonpie">Pol√≠ticas</button>
+        <button name="" type="button" class="botonpie">PolÌticas</button>
         </a>
     </section>
 
@@ -88,7 +107,7 @@
                 <a href="https://github.com/ZDG04" target="_blank">Zarith Dorelly Gomez Vargas</a><br>
                 <a href="https://github.com/QUIROZIN20" target="_blank">Hugo Andres Quiroz Zamora</a><br>
                 <a href="https://github.com/Jhun-K" target="_blank">David Jhun Kim Cubides</a><br>
-                <a href="https://reiz.co/" target="_blank">Juan Carlos Rodr√≠guez Mart√≠nez</a>
+                <a href="https://reiz.co/" target="_blank">Juan Carlos RodrÌguez MartÌnez</a>
             </p>
         </span>
     </section>
