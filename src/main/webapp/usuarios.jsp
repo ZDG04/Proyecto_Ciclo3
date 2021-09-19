@@ -38,7 +38,7 @@ p=request.getParameter("pas");
         </div>
         <nav class="cont_nav">
             <ul>
-               <li><a href="index.jsp">inicio</a></li>
+               <li><a href="menu.jsp">inicio</a></li>
                 <li><a href="usuarios.jsp">usuarios</a></li>
                 <li><a href="clientes.jsp">clientes</a></li>
                 <li><a href="proveedores.jsp">proveedores</a></li>
