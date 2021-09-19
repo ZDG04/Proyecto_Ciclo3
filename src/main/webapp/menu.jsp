@@ -41,7 +41,7 @@
                 <h3>Gestión de datos</h3>
                 <img src="img/clientes-h.png" width="100%">
             </article>
-            <a href="clientes.html">
+            <a href="clientes.jsp">
             <button name="" type="button" class="boton">Ingresar</button>
             </a>
         </section>
@@ -52,7 +52,7 @@
                 <img src="img/proveedores-h.png" width="100%">
                 
             </article>
-            <a href="proveedores.html">
+            <a href="proveedores.jsp">
             <button name="" type="button" class="boton">Ingresar</button>
             </a>
         </section>
@@ -62,7 +62,7 @@
                 <h3>Gestión de datos</h3>
                 <img src="img/productos-h.png" width="100%">
             </article>
-            <a href="productos.html">
+            <a href="productos.jsp">
                 <button name="" type="button" class="boton">Ingresar</button>
             </a>
         </section>
@@ -72,7 +72,7 @@
                 <h3>Gestión de datos</h3>
                 <img src="img/ventas-h.png" width="100%">
             </article>
-            <a href="ventas.html">
+            <a href="ventas.jsp">
                 <button name="" type="button" class="boton">Ingresar</button>
             </a>
         </section>
@@ -82,7 +82,7 @@
                 <h3>Gestión de datos</h3>
                 <img src="img/reportes-h.png" width="100%">
             </article>
-            <a href="reportes.html">
+            <a href="reportes.jsp">
                 <button name="" type="button" class="boton">Ingresar</button>
             </a>
         </section>
