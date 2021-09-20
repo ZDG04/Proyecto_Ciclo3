@@ -18,10 +18,8 @@ public Connection conexionbd() {
 			cnn=DriverManager.getConnection("jdbc:mysql://localhost/tienda","root","");
 			
 		} catch (SQLException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null,"Conexion ok");
 		}
-		JOptionPane.showMessageDialog(null,"Conexion ok");
-		
 	} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 	}

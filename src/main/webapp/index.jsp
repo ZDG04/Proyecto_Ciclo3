@@ -1,3 +1,4 @@
+<%@page import="controlador.Conexion"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -15,6 +16,8 @@
 
 
 <body>
+<%Conexion con = new Conexion();
+con.conexionbd();%>
     <header class="cont_header" id="cont">
         <div class="titulo-logo">
             <div class="logo" id="logo"></div>

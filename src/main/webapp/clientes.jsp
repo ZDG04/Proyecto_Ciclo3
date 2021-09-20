@@ -1,3 +1,4 @@
+<%@page import="controlador.Conexion"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -15,6 +16,20 @@
 </head>
 
 <body>
+<%  
+	
+	String ce="",n="",d="",t="",cr="";
+
+	if(request.getParameter("do")!=null){
+	ce=request.getParameter("do");
+	n=request.getParameter("nomb");
+	d=request.getParameter("dir");
+	t=request.getParameter("tel");
+	cr=request.getParameter("cor");
+	}
+	
+%>
+
     <header class="cont_header" id="cont">
         <div class="titulo-logo">
             <div class="logo" id="logo"></div>
@@ -40,16 +55,16 @@
 
     <section class="secb4">
         <fieldset class="formularioc">
-            <form action="" method="">
+            <form action="ServletCliente" method="post">
                 <input type="text" name="ced" placeholder="Cédula">
                 <input type="text" name="nom" placeholder="Nombre Completo">
-                <input type="text" name="dir" placeholder="Dirección">
-                <input type="text" name="tel" placeholder="Teléfono">
-                <input type="text" name="cor" placeholder="Correo Electrónico">
-                <input type="submit" name="btn" value="CONSULTAR">
-                <input type="submit" name="btn" value="CREAR">
-                <input type="submit" name="btn" value="ACTUALIZAR">
-                <input type="submit" name="btn" value="BORRAR">
+                <input type="text" name="dire" placeholder="Dirección">
+                <input type="text" name="tele" placeholder="Teléfono">
+                <input type="text" name="corr" placeholder="Correo Electrónico">
+                <input type="submit" name="btncon" value="CONSULTAR">
+                <input type="submit" name="btncre" value="CREAR">
+                <input type="submit" name="btnact" value="ACTUALIZAR">
+                <input type="submit" name="btnbor" value="BORRAR">
             </form>
         </fieldset>
       
