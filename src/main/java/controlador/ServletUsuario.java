@@ -107,7 +107,7 @@ public class ServletUsuario extends HttpServlet {
 				response.sendRedirect("usuarios.jsp");
 			}
 			
-			
+			}
 			
 			if(request.getParameter("btnbor")!=null) {
 			// Borrar Usuario
@@ -129,4 +129,4 @@ public class ServletUsuario extends HttpServlet {
 		}
 
 		}
-	}
+	

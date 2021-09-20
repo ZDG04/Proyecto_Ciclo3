@@ -107,7 +107,7 @@ public class ServletCliente extends HttpServlet {
 				response.sendRedirect("clientes.jsp");
 			}
 			
-			
+			}
 			
 			if(request.getParameter("btnbor")!=null) {
 			// Borrar Cliente
@@ -129,4 +129,4 @@ public class ServletCliente extends HttpServlet {
 		}
 
 		}
-	}
+	
