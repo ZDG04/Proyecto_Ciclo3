@@ -79,11 +79,11 @@ public boolean  actualizarCliente(ClienteDTO cli) {
 	int x;
 	
 	try {
-		ps=cnn.prepareStatement("UPDATE clientes SET nombre_cliente=?, telefono_cliente=?, email_cliente=?, telefono_cliente=? WHERE cedula_cliente=?");
+		ps=cnn.prepareStatement("UPDATE clientes SET nombre_cliente=?, direccion_cliente=?, telefono_cliente=?, email_cliente=? WHERE cedula_cliente=?");
 		ps.setString(1, cli.getNombre());
-		ps.setString(2, cli.getCorreo());
-		ps.setString(3, cli.getDireccion());
-		ps.setString(4, cli.getTelefono());
+		ps.setString(2, cli.getDireccion());
+		ps.setString(3, cli.getTelefono());
+		ps.setString(4, cli.getCorreo());
 		ps.setInt(5, cli.getCedula());
 		x=ps.executeUpdate();		
 		if(x>0) {
