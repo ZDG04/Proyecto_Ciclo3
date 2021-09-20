@@ -19,9 +19,7 @@
 <%
 //Conexion con=new Conexion();
 //con.conexionbd();
-
 String ce="",n="",cr="",u="",p="";
-
 if(request.getParameter("do")!=null){
 ce=request.getParameter("do");
 n=request.getParameter("nomb");

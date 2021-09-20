@@ -45,6 +45,8 @@ public class ServletCliente extends HttpServlet {
 		ClienteDAO clidao;
 		ClienteDTO recgdato;
 		
+		//Crear Usuario
+		
 		if(request.getParameter("btncre")!=null) {
 			ce=Integer.parseInt(request.getParameter("ced"));
 			n=request.getParameter("nom");
@@ -80,7 +82,7 @@ public class ServletCliente extends HttpServlet {
 			t=recgdato.getTelefono();
 			cr=recgdato.getCorreo();
 			
-			response.sendRedirect("clientes.jsp?do="+doc+"&&nomb="+n+"&&dir="+d+"&&tel="+t+"&&cor="+cr);
+			response.sendRedirect("clientes.jsp?do="+doc+"&&nomb="+n+"&&dirr="+d+"&&tele="+t+"&&core="+cr);
 					
 			}
 			

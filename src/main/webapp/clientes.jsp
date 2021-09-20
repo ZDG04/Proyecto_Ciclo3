@@ -17,15 +17,15 @@
 
 <body>
 <%  
-	
+
 	String ce="",n="",d="",t="",cr="";
 
 	if(request.getParameter("do")!=null){
 	ce=request.getParameter("do");
 	n=request.getParameter("nomb");
-	d=request.getParameter("dir");
-	t=request.getParameter("tel");
-	cr=request.getParameter("cor");
+	d=request.getParameter("dirr");
+	t=request.getParameter("tele");
+	cr=request.getParameter("core");
 	}
 	
 %>
@@ -56,11 +56,11 @@
     <section class="secb4">
         <fieldset class="formularioc">
             <form action="ServletCliente" method="post">
-                <input type="text" name="ced" placeholder="Cédula">
-                <input type="text" name="nom" placeholder="Nombre Completo">
-                <input type="text" name="dire" placeholder="Dirección">
-                <input type="text" name="tele" placeholder="Teléfono">
-                <input type="text" name="corr" placeholder="Correo Electrónico">
+                <input type="text" name="ced" placeholder="Cédula"              value = "<%=ce%>">
+                <input type="text" name="nom" placeholder="Nombre Completo"     value = "<%=n%>">
+                <input type="text" name="dir" placeholder="Dirección"           value = "<%=d%>">
+                <input type="text" name="tel" placeholder="Teléfono"            value = "<%=t%>">
+                <input type="text" name="cor" placeholder="Correo Electrónico"  value = "<%=cr%>">
                 <input type="submit" name="btncon" value="CONSULTAR">
                 <input type="submit" name="btncre" value="CREAR">
                 <input type="submit" name="btnact" value="ACTUALIZAR">
