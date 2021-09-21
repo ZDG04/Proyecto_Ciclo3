@@ -68,6 +68,7 @@ p=request.getParameter("pas");
                 desarrollado para el ministerio TIC y la Universidad el Bosque como proyecto del ciclo 3 tomando la
                 línea gráfica de <a href="https://uasqua.com/" target="_blank">uasqua.com</a></p>
         </span>
+        <a href="img/politicas.pdf" target="_blank">
         <button name="" type="button" class="botonpie">Políticas</button>
         </a>
     </section>
