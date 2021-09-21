@@ -31,7 +31,6 @@ public boolean crearCliente(ClienteDTO cli) {
 		if(x>0) {
 			dato=true;
 		}
-		JOptionPane.showMessageDialog(null, "Cliente agregado");
 	} catch (SQLException e) {
 		JOptionPane.showMessageDialog(null,"Error al insertar"+ e);
 		
@@ -41,20 +40,16 @@ public boolean crearCliente(ClienteDTO cli) {
 	
 }
 public ClienteDTO consultarCliente(ClienteDTO cli) {
-
 	try {
 		ps=cnn.prepareStatement("SELECT * FROM clientes WHERE cedula_cliente=?");
 		ps.setInt(1, cli.getCedula());
 		rs=ps.executeQuery();
 		if(rs.next()) {
 			cli=new ClienteDTO(rs.getInt(1),rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5));
-			
 		}
-		
 	} catch (SQLException e) {
 		e.printStackTrace();
 	}
-	
 	return cli;
 }
 

@@ -14,12 +14,9 @@
     <link rel="stylesheet" href="css/formularios.css">
 
 </head>
-
 <body>
 <%  
-
 	String ce="",n="",d="",t="",cr="";
-
 	if(request.getParameter("do")!=null){
 	ce=request.getParameter("do");
 	n=request.getParameter("nomb");
@@ -27,9 +24,7 @@
 	t=request.getParameter("tele");
 	cr=request.getParameter("core");
 	}
-	
 %>
-
     <header class="cont_header" id="cont">
         <div class="titulo-logo">
             <div class="logo" id="logo"></div>
@@ -47,12 +42,8 @@
         </nav>
         <h1>CLIENTES</h1>
     </header>
-
 <main>
-    <section class="secb3 secb">
-        
-    </section>
-
+    <section class="secb3 secb"></section>
     <section class="secb4">
         <fieldset class="formularioc">
             <form action="ServletCliente" method="post">
@@ -67,12 +58,9 @@
                 <input type="submit" name="btnbor" value="BORRAR">
             </form>
         </fieldset>
-      
     </section>
-    
 </main>
 </body>
-
 <footer>
     <section class="secpie">
         <span class="textopie">
@@ -82,9 +70,7 @@
                 línea gráfica de <a href="https://uasqua.com/" target="_blank">uasqua.com</a></p>
         </span>
         <button name="" type="button" class="botonpie">Políticas</button>
-        
     </section>
-
     <section class="secpie1 secpie">
         <span class="centro">
             <p>
@@ -93,7 +79,6 @@
             </p>
         </span>
     </section>
-
     <section class="secpie centro">
         <h2>
             Creado por:

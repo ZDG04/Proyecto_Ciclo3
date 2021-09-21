@@ -82,8 +82,8 @@ public class ServletCliente extends HttpServlet {
 			t=recgdato.getTelefono();
 			cr=recgdato.getCorreo();
 			
-			response.sendRedirect("clientes.jsp?do="+doc+"&&nomb="+n+"&&dirr="+d+"&&tele="+t+"&&core="+cr);
-					
+			response.sendRedirect("clientes.jsp?do="+doc+"&&nomb="
+			+n+"&&dirr="+d+"&&tele="+t+"&&core="+cr);
 			}
 			
 			if(request.getParameter("btnact")!=null) {
@@ -106,7 +106,6 @@ public class ServletCliente extends HttpServlet {
 				JOptionPane.showMessageDialog(null,"Cliente No Fue Actualizado");
 				response.sendRedirect("clientes.jsp");
 			}
-			
 			}
 			
 			if(request.getParameter("btnbor")!=null) {

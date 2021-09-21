@@ -48,8 +48,8 @@ public UsuarioDTO consultarusuario(UsuarioDTO us) {
 		ps.setInt(1, us.getCedula());
 		rs=ps.executeQuery();
 		if(rs.next()) {
-			usu=new UsuarioDTO(rs.getInt(1),rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5));
-			
+			usu=new UsuarioDTO(rs.getInt(1),rs.getString(2),
+					rs.getString(3), rs.getString(4), rs.getString(5));
 		}
 		
 	} catch (SQLException e) {

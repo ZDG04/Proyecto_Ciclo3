@@ -82,7 +82,8 @@ public class ServletUsuario extends HttpServlet {
 			u=recgdato.getUsuario();
 			p=recgdato.getPassword();
 			
-			response.sendRedirect("usuarios.jsp?do="+doc+"&&nomb="+n+"&&crr="+cr+"&&usua="+u+"&&pas="+p);
+			response.sendRedirect("usuarios.jsp?do="+doc+"&&nomb="+n
+					+"&&crr="+cr+"&&usua="+u+"&&pas="+p);
 					
 			}
 			
@@ -106,7 +107,6 @@ public class ServletUsuario extends HttpServlet {
 				JOptionPane.showMessageDialog(null,"Usuario No Fue Actualizado");
 				response.sendRedirect("usuarios.jsp");
 			}
-			
 			}
 			
 			if(request.getParameter("btnbor")!=null) {
@@ -123,10 +123,9 @@ public class ServletUsuario extends HttpServlet {
 				else {
 					JOptionPane.showMessageDialog(null,"Usuario No Fue Eliminado");
 					response.sendRedirect("usuarios.jsp");
-				}
-				
+				}		
+			  }
 			}
-		}
 
 		}
 	

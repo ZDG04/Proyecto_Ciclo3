@@ -3,7 +3,6 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +11,9 @@
     <title>Usuarios - Tienda Grupo 4</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/formularios.css">
-
 </head>
-
 <body>
 <%
-//Conexion con=new Conexion();
-//con.conexionbd();
 String ce="",n="",cr="",u="",p="";
 if(request.getParameter("do")!=null){
 ce=request.getParameter("do");
@@ -27,9 +22,7 @@ cr=request.getParameter("crr");
 u=request.getParameter("usua");
 p=request.getParameter("pas");
 }
-
 %>
-
     <header class="cont_header" id="cont">
         <div class="titulo-logo">
             <div class="logo" id="logo"></div>
@@ -47,12 +40,9 @@ p=request.getParameter("pas");
         </nav>
         <h1>USUARIOS</h1>
     </header>
-
 <main>
     <section class="secb1 secb">
-        
     </section>
-
     <section class="secb2">
         <fieldset class="formulariou">
             <form action="ServletUsuario" method="post">
@@ -67,12 +57,9 @@ p=request.getParameter("pas");
                 <input type="submit" name="btnbor" value="BORRAR">
             </form>
         </fieldset>
-      
     </section>
-    
 </main>
 </body>
-
 <footer>
     <section class="secpie">
         <span class="textopie">
