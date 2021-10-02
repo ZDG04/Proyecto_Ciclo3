@@ -1,3 +1,4 @@
+<%@page import="controlador.Conexion"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -8,23 +9,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.png" type="image/png" >
-    <title>Proveedores - Tienda Grupo 4</title>
+    <title>Ventas - Tienda Grupo 4</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/formularios.css">
 
 </head>
-
 <body>
-
-<%
-String nit="",np="",d="",t="",c="";
-if(request.getParameter("nit")!=null){
-nit=request.getParameter("nit");
-np=request.getParameter("nomp");
-d=request.getParameter("dir");
-t=request.getParameter("tel");
-c=request.getParameter("ciu");
-}
+<%  
+	String ce="",n="",d="",t="",cr="";
+	if(request.getParameter("do")!=null){
+	ce=request.getParameter("do");
+	n=request.getParameter("nomb");
+	d=request.getParameter("dirr");
+	t=request.getParameter("tele");
+	cr=request.getParameter("core");
+	}
 %>
     <header class="cont_header" id="cont">
         <div class="titulo-logo">
@@ -41,42 +40,53 @@ c=request.getParameter("ciu");
                 <li><a href="reportes.jsp">reportes</a></li>
             </ul>
         </nav>
-
+       
     </header>
-
-<main>
-    <section class="secb5 secb">
-        
+    <main>
+    <section class="secb7 secb">
+       <!--  <img src="img/productos.png"> -->
     </section>
 
-    <section class="secb4">
+    <section class="secb2-1">
+    <div class="pro">
     <h2 class="subtitulo stc">Gestión de</h2>
-        <h1 class="titulo tc">PROVEEDORES</h1>
+        <h1 class="titulo tc">VENTAS</h1>
         <hr class="hrc">
         <fieldset class="formularioc">
-            <form action="ServletProveedor" method="post">
-                <input type="text" name="nit" placeholder="NIT" 				value="<%=nit%>">
-                <input type="text" name="nomp" placeholder="Nombre Proveedor" 	value="<%=np%>">
-                <input type="text" name="dir" placeholder="Dirección" 			value="<%=d%>">
-                <input type="text" name="tel" placeholder="Teléfono" 			value="<%=t%>">
-                <input type="text" name="ciu" placeholder="Ciudad" 				value="<%=c%>">
-                <input type="submit" name="btncon" value="CONSULTAR">
-                <input type="submit" name="btncre" value="CREAR">
-                <input type="submit" name="btnact" value="ACTUALIZAR">
-                <input type="submit" name="btnbor" value="BORRAR">
+            <form action="ServletCliente" method="post">
+                <input type="text" name="nom" placeholder="Nombre del Archivo"     value = "<%=n%>">
+                <input type="submit" name="btncon" value="EXAMINAR">
+                <input type="submit" name="btncre" value="CARGAR">
+
             </form>
         </fieldset>
-      
+      </div>
     </section>
     
 </main>
-</body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
+    
+    
+    
+    
+    
+    
+    
+</body>
 <footer class="pata">
     <section class="secpie">
         <span class="textopie">
-            <p> 
-            	Este es un Software para gestionar transacciones comerciales de una tienda genérica,
+            <p>
+                Este es un Software para gestionar transacciones comerciales de una tienda genérica,
                 desarrollado para el ministerio TIC y la Universidad el Bosque como proyecto del ciclo 3 tomando la
                 línea gráfica de <a href="https://uasqua.com/" target="_blank">uasqua.com</a></p>
         </span>
@@ -84,16 +94,14 @@ c=request.getParameter("ciu");
         <button name="" type="button" class="botonpie">Políticas</button>
         </a>
     </section>
-
     <section class="secpie1 secpie">
         <span class="centro">
-         <p>
-              <img src="img/logo-ueb-blanco.png">
-              <img src="img/logo-MinTIC.png" width="80%">
-         </p>
+            <p>
+                <img src="img/logo-ueb-blanco.png">
+                <img src="img/logo-MinTIC.png" width="80%">
+            </p>
         </span>
     </section>
-
     <section class="secpie centro">
         <h2>
             Creado por:

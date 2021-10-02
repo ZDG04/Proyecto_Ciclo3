@@ -1,11 +1,9 @@
 fieldset{
 
     margin-right: auto;
-    
     margin-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 175px;
     height: auto;
-    
     display: flex;
     align-items: center;
     justify-content: center ;
@@ -62,11 +60,22 @@ input{
     border: #FDE90198;
     background-color: #fde801e0;
     font-weight: 500;
-    width: 150px;
+    width: 20%;
     border-radius: 5px;
     letter-spacing: 2px;
 }
+@media only screen and (max-width: 1024px) {
+    [type="submit"]{
+        padding: 12px 1% ;
+        display: inline;
+    }
+}
 
+/*@media only screen and (min-width: 1024px) {
+    [type="submit"]{
+
+    }
+}*/
 
 
 label{
