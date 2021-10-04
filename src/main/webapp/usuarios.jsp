@@ -38,7 +38,7 @@ p=request.getParameter("pas");
                 <li><a href="reportes.jsp">reportes</a></li>
             </ul>
         </nav>
-        <h1>USUARIOS</h1>
+        <h1>USUARIO</h1>
     </header>
 <main>
     <section class="secb1 secb">
