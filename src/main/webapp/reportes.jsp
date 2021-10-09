@@ -53,34 +53,80 @@
         <h1 class="titulo tc">REPORTES</h1>
         <hr class="hrc">
         <fieldset class="formularioc">
-            <form action="ServletCliente" method="post">
-                <input type="text" name="nom" placeholder="Nombre del Archivo"     value = "<%=n%>">
-                <input type="submit" name="btncon" value="EXAMINAR">
-                <input type="submit" name="btncre" value="CARGAR">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <form action="PruebaVenta" method="post">
+         <section class="ventas1">
+                    <table class="tablar">
+    <tbody>
+        <tr>
+            <td class="tdr" >   <input class="botonr" type="submit" name="btncon" value="LISTADO DE USUSARIOS"></td>               
+        </tr>
+        <tr>
+            <td class="tdr">   <input class="botonr" type="submit" name="btncon" value="LISTADO DE CLIENTES"></td>          
+        </tr>
+        <tr>
+           <td class="tdr">   <input class="botonr" type="submit" name="btncon" value="VENTAS POR CLIENTE"></td>
 
-            </form>
-        </fieldset>
-      </div>
-    </section>
+        </tr>        
+    </tbody>
     
+</table>
+               <section class="reportes">    
+ <table class="tablar2">
+    <tbody>
+        <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Correo Electrónico</th>
+            <th>Usuario</th>
+            <th>Conraseña</th>
+            </td>
+                
+        </tr>
+        <tr>
+            <td>1234567890</td>
+            <td>Juan</td>
+            <td>juan@coreo.com</td>
+            <td>juanu</td>
+            <td>contrase;a1</td>
+        </tr>
+        <tr>
+            <td>087654321</td>
+            <td>Hugo</td>
+            <td>hugo@coreo.com</td>
+            <td>hugou</td>
+            <td>contrase;a2</td>
+        </tr>
+        <tr>
+            <td>1324576890</td>
+            <td>Claudia</td>
+            <td>claudia@coreo.com</td>
+            <td>claudiau</td>
+            <td>contrase;a3</td>
+        </tr>
+       
+    </tbody>
+    </table>
+ </section>
+                   
+
+</form>
+         
 </main>
     
     
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
+   
 </body>
 <footer class="pata">
     <section class="secpie">
