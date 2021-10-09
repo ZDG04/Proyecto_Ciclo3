@@ -17,6 +17,78 @@ body{
     width: 100%;   
 }
 
+.ventas1{
+	height: 150px;
+	width: 100%;
+	padding-bottom: 40px;
+	/*border-bottom: solid 1px #66bb8c 90%;*/
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+	
+	
+}
+
+
+.tablar{
+	width: 90%;
+	
+}
+
+
+.tablar2 {
+    width: 100%;
+        background: #fbe80047;
+}
+.tablar2 th{
+	        background: #fbe80061;
+    border: 1px solid #005a5a;
+    padding: 10px 0;
+        font-weight: 300;
+}
+
+.tablar2 td{
+	    background: #fbe80000;
+    border: 1px solid #005a5a;
+    padding: 10px 0;
+        font-weight: 100;
+            text-align: center;
+    color: #fff;
+}
+
+
+
+.ventas2{
+	height: 180px;
+	padding-top: 40px;
+	width: 90%;
+	
+}
+
+.reportes{
+	height: auto;
+	padding-top: 40px;
+	width: 100%;
+	
+}
+
+
+input.botonr {
+    width: -webkit-fill-available;
+}
+
+td.tdr {
+    height: 55px;
+}
+
+
+[type="text"].cant {
+    width: 30%;
+    margin-left: 18px;
+}
+
 .logo{
     background-image: url(..//img/logo-sl.png);
     background-size: contain;
@@ -59,6 +131,33 @@ body{
     border-bottom: 2px #FDE901 solid;
 }
 
+th{
+	font-weight: 200;
+    text-align: center;
+    color: #fff;
+}
+
+input.botonv {
+    width: 100%;
+    margin: 9px;
+}
+
+td{
+	padding: 0 15px 0 0;
+}
+
+td input{
+	    margin: 5px auto;
+	        width: 100%;
+	
+}
+.codigov, .consultarv, .cantidadv{
+	width: 10%;
+}
+
+ .preciov{
+	width: 20%;
+}
 
 .titulo{
     text-align: left;

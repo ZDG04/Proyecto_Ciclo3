@@ -48,15 +48,83 @@
     </section>
 
     <section class="secb2-1">
-    <div class="pro">
+    <div>
     <h2 class="subtitulo stc">Gestión de</h2>
         <h1 class="titulo tc">VENTAS</h1>
         <hr class="hrc">
         <fieldset class="formularioc">
-            <form action="ServletCliente" method="post">
+        
+        
+        
+         <form action="ServletVentas" method="post">
+         <section class="ventas1">
+                    <input type="text" name="cedula" value="${cliente.getCedula()}" placeholder="Cédula">
+                    <input type="text" name="nombre" value="${cliente.getNombre()}" placeholder="Nombre">
+                    <input type="submit" name="confirmar" value="CONSULTAR" >
+                    </section>
+               <section class="ventas2">    
+<table>
+    <tbody>
+        <tr>
+            <th class="codigov">Código</th>
+            <th class="consultarv"></th>
+            <th class="nombrev">Nombre</th>
+            <th class="cantidadv">Cantidad</th>
+            <th class="preciov">Precio</th>
+        </tr>
+
+
+        <tr>
+            <td><input type="text" name="codigo1" value="${produc1.getCodigoproducto()}"  ></td>
+            <td> <input type="submit" name="producto1" value="CONSULTAR" class="botonv" ></td>
+            <td> <input type="text" class="nombre" name="n2" value="${produc1.getNombreproducto()}"  ></td>
+            <td> <input type="text" class="cantidad cant"  id="cantidad" name="can"   ></td>
+            <td> <input type="text" class="pre" id="pre" name="precio" value="${produc1.getPrecioventa()}"  ></td>
+                
+        </tr>
+        <tr>
+            <td><input type="text" name="codigo2" value="${produc2.getCodigoproducto()}"  ></td>
+            <td> <input type="submit" name="producto2" value="CONSULTAR" class="botonv" ></td>
+            <td> <input type="text" class="nombre" name="n2" value="${produc2.getNombreproducto()}"  ></td>
+            <td> <input type="text" class="cantidad1 cant"  id="cantidad1" name="can1"  ></td>
+            <td> <input type="text" class="pre"  id="pre1" name="precio1" value="${produc2.getPrecioventa()}"  ></td>
+
+        </tr>
+        <tr>
+           <td><input type="text" name="codigo3" value="${produc3.getCodigoproducto()}"  ></td>
+            <td> <input type="submit" name="producto3" value="CONSULTAR" class="botonv" ></td>
+            <td> <input type="text" class="nombre" name="n2" value="${produc3.getNombreproducto()}"  ></td>
+            <td> <input type="text" class="cantidad2 cant" id="cantidad2" name="can2" ></td>
+            <td> <input type="text" class="pre"  id="pre2" name="precio2" value="${produc3.getPrecioventa()}"  ></td>
+
+        </tr>
+        
+        <tr><td class="ult" colspan="5"><input type="submit" name="venta" value="ENVIAR"></td></tr>
+        
+    </tbody>
+    
+</table>
+   
+	<input type="text" name="cu" value="${vs.getCedula_Usuario()}"  >
+	
+	 
+ </section>
+                   
+
+</form>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <!-- <form action="ServletCliente" method="post">
                 <input type="text" name="nom" placeholder="Nombre del Archivo"     value = "<%=n%>">
                 <input type="submit" name="btncon" value="EXAMINAR">
-                <input type="submit" name="btncre" value="CARGAR">
+                <input type="submit" name="btncre" value="CARGAR"> -->
 
             </form>
         </fieldset>
